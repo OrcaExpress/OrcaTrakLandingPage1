@@ -1,6 +1,5 @@
-//$('accordion').slideToggle().off;
-
 $('.accordion').on('click', '.accordion-control', function (e) { // When clicked
+    $(this).slideToggle().off;
     e.preventDefault();                    // Prevent default action of button
     $(this)                                // Get the element the user clicked on
             .next('.accordion-panel')            // Select following panel 
