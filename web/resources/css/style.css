@@ -41,13 +41,13 @@ h6 {
     padding-bottom: 26%;
 
     /* added this line below */
-    top: -180px;
+    top: -300px;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .shadowme {
@@ -65,9 +65,9 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-a:hover { 
+/*a:hover { 
     font-size: 18px;
-}
+}*/
 
 a:link {
     text-decoration: none;
