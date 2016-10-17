@@ -35,60 +35,69 @@ button {
 
 
 
-
-
-
-
-
 form {
     font-family: Arial, Verdana, sans-serif;
     color:#665544
 }
 
-input {
-    border-bottom: 1px dotted #dcdcdc;
+.userEntry {
+    margin-right: 10px;
+    border-bottom: 1px #dcdcdc;
     border-top: none;
     border-right: none;
     border-left: none;
     padding: 5px;
-    width: 280px;
+    width: 180px;
     margin-bottom: 20px;
+    /* cornsilk antiquewhite #f8f8f8 activecaption blanchedalmond burlywood*/
+    background-color: cornsilk;
 }
 
-input:focus {
-    border: 1px dotted #dcdcdc;
+.pswd { 
+    font-size: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/*.userEntry:focus {
+    border: 1px #dcdcdc;
     outline: none;
 }
-
+ 
 input#submit {
     color: #ffffff;
     background-color: #665544;
     border: none;
     border-radius: 5px;
     width: 80px;
-}
+    background-color: burlywood;
+}*/
 
+/*
 input#submit:hover {
     color: #665544;
     background-color: #efefef;
-}
+}*/
+ 
 
 fieldset {
-    width: 350px;
+    width: 50%;
     border: 1px solid #dcdcdc;
     border-radius: 10px;
-    padding: 20px;
-    text-align: right;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
 }
 
-legend {
+/*legend {
     background-color: #efefef;
     border: 1px solid #dcdcdc;
     border-radius: 10px;
     padding: 10px 20px;
     text-align: left;
     text-transform: uppercase;
-}
+    width: 50%
+}*/
 
 /*.accordion-panel p {
   margin: 20px;

@@ -26,15 +26,16 @@
                                 <a class="accordion-control"><h2 class="shadowme member" style="color:orange;text-decoration:none;cursor: pointer">Member</h2></a>
                                 <div class="accordion-panel">
                                     <h:form>
-                                        <legend>Member</legend>
                                         <fieldset>
-                                            <h:inputText id="userName" value="">
+                                            <h:inputText id="userName" styleClass="userEntry" value="">
                                                 <f:passThroughAttribute name="placeholder" value="enter user"/>
                                             </h:inputText>
-                                            <h:inputSecret id="password" value="">
+                                            <h:inputSecret id="password" styleClass="userEntry" value="">
                                                 <f:passThroughAttribute name="placeholder" value="enter password"/>
                                             </h:inputSecret>
                                             <h:commandButton id="login" value="Log Me In"/>
+                                            <h:commandLink id="forgot_pswd" styleClass="pswd" value="Forgot Password"/>
+                                            <h:selectManyCheckbox id="keepMeLogged" styleClass="keep_me_logged" value="Keep Me Logged"/>
                                         </fieldset>
                                     </h:form>
                                 </div>
