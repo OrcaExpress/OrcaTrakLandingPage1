@@ -8,20 +8,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <h:outputStylesheet library="css" name="style.css"/>
-        <!--<link href="#{request.contextPath}/css/accordion.css" rel="stylesheet" type="text/css"/>-->
         <h:outputStylesheet library="css" name="accordion.css"/>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
         <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
     </h:head>
     <h:body>
         <div class="intro-header">
             <div class="row">
                 <div class="intro-message">
-                    <!-- Client Registration -->
-                    <h:form>
-                        <h:commandLink style="display:block;text-decoration:underline;text-align:right;font-family:times,serif;cursor:pointer;
-                                       padding-top:0px;padding-right:15px" value="Client Registration" action="registration.xhtml"/>
-                    </h:form>
-                    <!-- Company header and dividers -->
                     <hr class="intro-divider"/>
                     <h1 class="shadowme">Orca Trak</h1><a href="#"></a> 
                     <h2 class="shadowme">Quote . Book . Ship</h2>
@@ -29,9 +23,8 @@
                     <ul class="accordion">
                         <ul class="accordion">
                             <li>
-                                <a class="accordion-control"><h2 class="shadowme member" style="color:orange;text-decoration:none;cursor:pointer">Member</h2></a>
+                                <a class="accordion-control"><h2 class="shadowme member" style="color:orange;text-decoration:none;cursor: pointer">Member</h2></a>
                                 <div class="accordion-panel">
-                                    <!-- Member -->
                                     <h:form>
                                         <fieldset>
                                             <h:inputText id="userName" styleClass="userEntry" value="">
@@ -41,35 +34,28 @@
                                                 <f:passThroughAttribute name="placeholder" value="enter password"/>
                                             </h:inputSecret>
                                             <h:commandButton id="login" value="Log Me In"/>
-                                            <h:selectManyCheckbox id="keepMeLogged" styleClass="keep_me_logged" value="">
-                                                <f:selectItem itemValue="1" itemLabel="Remember Me" />
-                                            </h:selectManyCheckbox>
                                             <h:commandLink id="forgot_pswd" styleClass="pswd" value="Forgot Password"/>
+                                            <h:selectManyCheckbox id="keepMeLogged" styleClass="keep_me_logged" value="Keep Me Logged"/>
                                         </fieldset>
                                     </h:form>
                                 </div>
                             </li>
                         </ul>
-                        <!-- Guest -->
                         <ul class="accordion">
                             <li>
-                                <a class="accordion-control" href="public/guest.xhtml"><h2 class="shadowme" style="color:orange;text-decoration:none;cursor:pointer">Guest</h2></a>
+                                <a class="accordion-control" href="public/guest.xhtml"><h2 class="shadowme" style="color:orange;text-decoration:none;cursor: pointer">Guest</h2></a>
                                 <div class="accordion-panel"/>
                             </li>
                         </ul>
-                        <!-- Track a Shipment -->
                         <ul class="accordion">
                             <li>
-                                <a class="accordion-control"><h2 class="shadowme" style="color:orange;text-decoration:none;cursor:pointer">Trak-a Shipment</h2></a>
+                                <a class="accordion-control"><h2 class="shadowme" style="color:orange;text-decoration:none;cursor: pointer">Trak-a Shipment</h2></a>
                                 <div class="accordion-panel">
-                                    <h:form>
-                                        <fieldset>
-                                            <h:inputText value="">
-                                                <f:passThroughAttribute name="placeholder" value="enter tracking number"/>
-                                            </h:inputText>
-                                            <h:commandButton id="trackme" value="Track"/>
-                                        </fieldset>
-                                    </h:form> 
+                                    <form>
+                                        <h:inputText id="track" value="">
+                                            <f:passThroughAttribute name="placeholder" value="enter tracking number"/>
+                                        </h:inputText>
+                                    </form> 
 
                                 </div>
                             </li>

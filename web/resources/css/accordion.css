@@ -31,10 +31,6 @@ button {
     display: none;
 }
 
-
-
-
-
 form {
     font-family: Arial, Verdana, sans-serif;
     color:#665544
@@ -50,13 +46,13 @@ form {
     width: 180px;
     margin-bottom: 20px;
     /* cornsilk antiquewhite #f8f8f8 activecaption blanchedalmond burlywood*/
-    background-color: cornsilk;
+    background-color: #f8f8f8;
 }
 
 .pswd { 
     font-size: 10px;
     margin-left: 10px;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 /*.userEntry:focus {
@@ -81,13 +77,26 @@ input#submit:hover {
  
 
 fieldset {
-    width: 50%;
+    width: 40%;
     border: 1px solid #dcdcdc;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
     margin: auto;
 }
+
+/*#trackme {
+    margin-right: 20px;
+    border-bottom: 1px #dcdcdc;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 5px;
+    width: 50px;
+    margin-bottom: 20px;
+     cornsilk antiquewhite #f8f8f8 activecaption blanchedalmond burlywood
+    background-color: #f8f8f8;
+}*/
 
 /*legend {
     background-color: #efefef;

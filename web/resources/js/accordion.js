@@ -1,4 +1,4 @@
-$('.accordion').on('click', '.accordion-control', function (e) { // When clicked
+$('.accordion').on('click', '.accordion-control', function (e) { // When clicked .accordion-control
     $(this).slideToggle().off;
     e.preventDefault();                    // Prevent default action of button
     $(this)                                // Get the element the user clicked on
