@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Orca Trak</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <h:outputStylesheet library="css" name="style.css"/>
+        <h:outputStylesheet library="css" name="accordion.css"/>
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <div class="intro-header">
+            <div class="row">
+                <div class="intro-message">
+                    <!-- Client Registration -->
+                    <h:form>
+                        <h:commandLink style="display:block;text-decoration:underline;text-align:right;font-family:times,serif;cursor:pointer;
+                                       margin-top:-35px;padding-top:0px;padding-right:15px" value="Client Registration" action="registration.xhtml"/>
+                    </h:form>
+                    <!-- Company header and dividers -->
+                    <hr class="intro-divider"/>
+                    <h1 class="shadowme">Orca Trak</h1><a href="#"></a> 
+                    <h2 class="shadowme">Quote . Book . Ship</h2>
+                    <hr class="intro-divider"/>
+                    <ul class="accordion">
+                        <ul class="accordion">
+                            <li>
+                                <a class="accordion-control"><h2 class="shadowme member" style="color:orange;text-decoration:none;cursor:pointer">Member</h2></a>
+                                <div class="accordion-panel">
+                                    <!-- Member -->
+                                    <h:form>
+                                        <fieldset>
+                                            <h:inputText id="userName" styleClass="userEntry" value="">
+                                                <f:passThroughAttribute name="placeholder" value="enter user"/>
+                                            </h:inputText>
+                                            <h:inputSecret id="password" styleClass="userEntry" value="">
+                                                <f:passThroughAttribute name="placeholder" value="enter password"/>
+                                            </h:inputSecret>
+                                            <h:commandButton id="login" value="Log Me In"/>
+                                            <h:selectBooleanCheckbox id="keepMeLogged" styleClass="keep_me_logged" value=""/>
+                                            <h:commandLink id="forgot_pswd" styleClass="pswd" value="Forgot Password"/>
+                                        </fieldset>
+                                    </h:form>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Guest -->
+                        <ul class="accordion">
+                            <li>
+                                <a class="accordion-control" href="faces/public/guest.xhtml" target="_blank"><h2 class="shadowme" style="color:orange;text-decoration:none;cursor:pointer">Guest</h2></a>
+                                <div class="accordion-panel"/>
+                            </li>
+                        </ul>
+                        <!-- Track a Shipment -->
+                        <ul class="accordion">
+                            <li>
+                                <a class="accordion-control"><h2 class="shadowme" style="color:orange;text-decoration:none;cursor:pointer">Trak-a Shipment</h2></a>
+                                <div class="accordion-panel">
+                                    <h:form>
+                                        <fieldset>
+                                            <h:inputText value="">
+                                                <f:passThroughAttribute name="placeholder" value="enter tracking number"/>
+                                            </h:inputText>
+                                            <h:commandButton id="trackme" value="Track"/>
+                                        </fieldset>
+                                    </h:form> 
+
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                    <!--<h2><a class="shadowme" style="color:orange;text-decoration:none;" href="javascript:void(0)" onClick="window.open('mobile.xhtml', 'mobile.xhtml', 'width=320,height=440')">Mobile Event Logger</a></h2>-->
+                </div>
+            </div>
+        </div>
+        <script src="resources/js/jquery-1.11.0.min.js"></script>
+        <script src="resources/js/accordion.js"></script>
+    </h:body>
+</html>
+

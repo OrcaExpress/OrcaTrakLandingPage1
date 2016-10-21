@@ -30,14 +30,12 @@ h6 {
     background-position: 0px 0px;
     background-color: #000;
     background-size: cover;
-}
+} 
 
-/*.intro-message { 
-    background: red;
-}*/
-
-/*.greyish {
-    color: #777777;
+/*#content { 
+    position: relative;
+    text-align: center;
+    top: -650px;
 }*/
 
 .intro-message {
